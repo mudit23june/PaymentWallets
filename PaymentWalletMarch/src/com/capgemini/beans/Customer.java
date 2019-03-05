@@ -22,30 +22,17 @@ public class Customer {
 	public void setWallet(Wallet wallet) {
 		this.wallet = wallet;
 	}
+	public Customer() {
+		super();
+	}
 	public Customer(String name, String mobileNumber, Wallet wallet) {
 		super();
 		this.name = name;
 		this.mobileNumber = mobileNumber;
 		this.wallet = wallet;
 	}
-	public Customer() {
-		super();
-	}
 	@Override
 	public String toString() {
 		return "Customer [name=" + name + ", mobileNumber=" + mobileNumber + ", wallet=" + wallet + "]";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }

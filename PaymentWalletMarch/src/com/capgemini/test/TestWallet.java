@@ -23,10 +23,10 @@ public class TestWallet {
 	
 		
 	@Test(expected=com.capgemini.exception.DuplicatePhoneNo.class)
-	public void test() throws DuplicatePhoneNo
+	public void test() throws DuplicatePhoneNo, PhoneNoDoesNotExist
 	{
-		ws.createAccount("Ravi1", "1",new BigDecimal("10000.0"));
-		ws.createAccount("Ravi2", "1",new BigDecimal("10000.0"));
+		ws.createAccount("Mudit", "1",new BigDecimal("10000.0"));
+		ws.createAccount("DEF", "1",new BigDecimal("10000.0"));
 		
 	}
 	@Test(expected=com.capgemini.exception.PhoneNoDoesNotExist.class)
@@ -37,9 +37,9 @@ public class TestWallet {
 		
 	}
 	@Test
-	public void test3() throws DuplicatePhoneNo 
+	public void test3() throws DuplicatePhoneNo, PhoneNoDoesNotExist 
 	{
-		ws.createAccount("Ravi1", "1",new BigDecimal("10000.0"));
+		ws.createAccount("Mudit", "1",new BigDecimal("10000.0"));
 		
 		
 	}

@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 import com.capgemini.beans.Customer;
+import com.capgemini.exception.PhoneNoDoesNotExist;
 
 public class WalletRepoImpl implements WalletRepo {
 	
@@ -15,7 +16,7 @@ public class WalletRepoImpl implements WalletRepo {
 	}
 
 	@Override
-	public Customer findOne(String mobilenumber) {
+	public Customer findOne(String mobilenumber) throws PhoneNoDoesNotExist {
 		// TODO Auto-generated method stub
 		ListIterator<Customer> it = l.listIterator();
 		while(it.hasNext())

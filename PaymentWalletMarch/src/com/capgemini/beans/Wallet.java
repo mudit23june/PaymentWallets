@@ -12,7 +12,11 @@ public class Wallet {
 	public void setBalance(BigDecimal balance) {
 		this.balance = balance;
 	}
-
+	
+	public Wallet() {
+		super();
+	}
+	
 	public Wallet(BigDecimal balance) {
 		super();
 		this.balance = balance;
@@ -22,12 +26,4 @@ public class Wallet {
 	public String toString() {
 		return "Wallet [balance=" + balance + "]";
 	}
-
-	public Wallet() {
-		super();
-	}
-	
-	
-	
-
 }
